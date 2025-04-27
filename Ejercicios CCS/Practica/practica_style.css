@@ -1,0 +1,36 @@
+.practica1_1{
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.practica2_1{
+    background-color: rgb(236, 146, 153);
+    font-family: Verdana,sans-serif;
+    font-weight: bold;
+}
+.practica2_1.cooler{
+    font-size: 24px;
+}
+#practica2_2{
+color: blue;
+font-size: 36px;
+}
+#practica2_3{
+    background-color: rgb(129, 216, 129);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.practica2_imagen1{
+    height: auto;
+    width: 300px;
+}
+
+.practica2_imagen2{
+    height: 600px;
+    width: 400px;
+}

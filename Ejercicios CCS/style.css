@@ -1,0 +1,52 @@
+ /*
+   */
+
+h5{
+   color: red; 
+   background-color: black;
+}
+
+.forma-2{
+   color: blueviolet;
+   background-color:rgb(67, 180, 255);
+}
+
+#forma-3{
+   background-color: rgb(201, 136, 136);
+}
+
+.forma-4_1, 
+.forma-4_2{
+
+   color: white;
+  background-color:black;
+}
+
+.forma5.prueba1{
+   background-color: black;
+}
+.forma5.prueba2{
+   color: aqua;
+   font-family: Arial;
+}
+
+.forma5.prueba3{
+   background: gray;
+}
+.forma5.prueba4#forma5_4{
+   color:blue;
+}
+
+/*
+COMANDOS BASICOS:
+- font-family: Cambiar el tipo de letra como 'arial'
+- font-size: Cambiar el tamaño de la letra como '16px'
+- font-weight: Afecta la negrilla del texto, ejemplo: 'font-weight: bold, font-weight: 700'
+- text-align: Alinea el texto central,derecha,izquierda. Ejemplo: 'text-align: center '
+
+COMANDO PARA EL ALTO Y ANCHO DE LA IMAGEN
+img {
+  height: auto;
+  width: 500px;
+}
+*/
