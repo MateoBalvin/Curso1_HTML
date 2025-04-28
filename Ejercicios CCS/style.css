@@ -1,5 +1,20 @@
  /*
-   */
+ */
+
+
+/*
+COMANDOS BASICOS:
+- font-family: Cambiar el tipo de letra como 'arial'
+- font-size: Cambiar el tamaño de la letra como '16px'
+- font-weight: Afecta la negrilla del texto, ejemplo: 'font-weight: bold, font-weight: 700'
+- text-align: Alinea el texto central,derecha,izquierda. Ejemplo: 'text-align: center '
+
+COMANDO PARA EL ALTO Y ANCHO DE LA IMAGEN
+img {
+  height: auto;
+  width: 500px;
+}
+*/
 
 h5{
    color: red; 
@@ -38,15 +53,121 @@ h5{
 }
 
 /*
-COMANDOS BASICOS:
-- font-family: Cambiar el tipo de letra como 'arial'
-- font-size: Cambiar el tamaño de la letra como '16px'
-- font-weight: Afecta la negrilla del texto, ejemplo: 'font-weight: bold, font-weight: 700'
-- text-align: Alinea el texto central,derecha,izquierda. Ejemplo: 'text-align: center '
+POSICIONAMIENTO DE ELEMENTOS "Modelo de Caja"
+-Padding "Relleno": Crea un espacio alrededor de un elemento pero dentro del propio elemento, quiere decir que crea un espacio adentro mientras que el margin lo crea afuera
 
-COMANDO PARA EL ALTO Y ANCHO DE LA IMAGEN
-img {
-  height: auto;
-  width: 500px;
-}
+Ejemplo #1:
+ p{
+ padding-top: 16px; - Arriba
+ padding-right: 16px; - Derecha
+ padding-bottom: 25px; - Abajo
+ padding-left: 18px; - Izquierda
+ }
+ Ejemplo #2:
+ p{
+ padding: 16px 20px 25px 18px; - (arriba,derecha,abajo,izquierda)
+   
+ }
+
+-Border: Agrega espacio aunque sea solo un pixel o dos entre el margen y el relleno
+
+-Margin "Margen": Crea un espacio entre los elementos de Html, es decir crea un espacio en blanco para un parrafo y otro, con otras palabras crea un espacio afuera del elemento mientras que el padding lo crea adentro
+Ejemplo #1:
+ p{
+ margin-top: 16px; - Arriba
+ margin-right: 16px; - Derecha
+ margin-bottom: 25px; - Abajo
+ margin-left: 18px; -Izquierda
+ }
+ Ejemplo #2:
+ p{
+ margin: 16px 20px 25px 18px; - (arriba,derecha,abajo,izquierda)
+ }
 */
+
+/*EJEMPLO 1*/
+.Ejemplo1_1{
+   
+   background-color: rgb(248, 174, 174);
+   width: 300px;
+   padding: 32px;
+   margin: 0 auto;
+   
+   
+  
+}
+
+.Ejemplo1_2{
+   text-align: left;
+   background-color: rgb(131, 199, 216);
+   width: 900px;
+   margin: 0 auto;
+}
+
+.Ejemplo1_3{
+   text-align: right;
+   background-color: rgb(214, 182, 123);
+   width: 200px;
+   padding: 32px;
+   margin-right: 700px;
+   margin-left: auto;
+   
+}
+
+/*EJEMPLO 2:*/
+.Ejemplo2_1{
+   background: rgb(180, 179, 179);
+   padding: 20px;
+   width: 500px;
+   margin: 0 auto;
+}
+
+.Ejemplo2_2{
+   /*background*/ 
+   background-color: white;
+   width: 400px;
+   height: auto;
+   margin: 0 auto;
+   padding: 10px;
+}
+.Ejemplo2_3{
+   font-size: 16px;
+   font-family: Arial;
+   font-weight: bold;
+   background-color: rgb(169, 205, 235);
+   width: 300px;
+   margin: 0 auto;
+   margin-bottom: 8px;
+   padding: 10px;
+}
+
+.Ejemplo2_4{
+   font-size: 16px;
+   font-family: Arial;
+   background-color: rgb(169, 205, 235);
+   width: 300px;
+   margin: 0 auto;
+   margin-bottom: 8px;
+   padding: 10px;
+}
+
+.Ejemplo2_5{
+   font-size: 16px;
+   font-family: Arial;
+   text-align: center;
+   background-color: rgb(169, 205, 235);
+   width: 300px;
+   margin: 0 auto;
+   
+}
+.Ejemplo2_boton{
+   font-size: 18px;
+}
+
+
+
+/*
+COMANDOS PARA BLOCK - INLINE:
+Block: El estilo predeterminado es block, es decir, los elementos de bloque aparecerán en la página apilados uno sobre otro y cada elemento nuevo comenzará en una nueva línea
+*/
+ 
