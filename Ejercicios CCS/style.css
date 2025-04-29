@@ -69,7 +69,11 @@ Ejemplo #1:
    
  }
 
--Border: Agrega espacio aunque sea solo un pixel o dos entre el margen y el relleno
+-Border: Agrega espacio aunque sea solo un pixel o dos entre el margen y el relleno, es decir ponerle borde a las cosas
+Ejemplo:
+p{
+border: 1px solid red;
+ }
 
 -Margin "Margen": Crea un espacio entre los elementos de Html, es decir crea un espacio en blanco para un parrafo y otro, con otras palabras crea un espacio afuera del elemento mientras que el padding lo crea adentro
 Ejemplo #1:
@@ -165,9 +169,120 @@ Ejemplo #1:
 }
 
 
-
 /*
-COMANDOS PARA BLOCK - INLINE:
-Block: El estilo predeterminado es block, es decir, los elementos de bloque aparecerán en la página apilados uno sobre otro y cada elemento nuevo comenzará en una nueva línea
+COMANDOS PARA FLEX CONTAINER:
+---------------------------------------------------------------------
+-Flex-container: Ayuda a crear diseños de secciones en su página web para poner los elementos uno al lado del otro, esto nos sirve para que cuando coloquemos un elemento no se coloque directamente abajo del otro
+
+Ejemplo:
+.flex-container{        ---> Este codigo ayuda para la seccion que queremos diseñar se coloque de un elemento de un lado del otro
+display: flex
+ }
+---------------------------------------------------------------
+-Flex-direction: Ayuda cuando hagamos un flex-container elegir la direccion que queremos para los elementos
+
+Ejemplo:
+flex-direction: row; - 'Direccion en filas'
+flex-direction: row-reverse; - 'Direccion en filas pero empieza desde la derecha y con los elemento alcontrario'
+flex-direcion: column; - 'Direccion en columnas'
+flex-direction: column-reverse; - 'Direccion en columnas pero al reves'
+-----------------------------------------------------------------
+-Flex-wrap: Se usa cuando insertamos varias cajas o elementos a un mismo div y se deforma, lo que hace es acomodar los elementos correctamente para que esten bien organizados y todos tengan su tamaño justo 
+
+Ejemplo::
+flex-wrap : wrap
+flex-wrap : wrap-reverse  - 'Empieza de la ultima caja a la primera'
+-----------------------------------------------------------
+-flex-flow: COmbina lo que hace flex-direction y flex-wrap en uno solo
+
+Ejemplo: 
+flex-flow: row wrap
+---------------------------------------------------------
+-Justify-content: Se usa cuando rengo varios elementos o cajas en un mismo div y quiero centrar esos elementos
+
+Ejemplo:
+.flex-container{
+
+justify-content: center; - 'Centra todo los elementos que hay en el div o caja, sin quitar los ajustes hechos por magin'
+justify-content: flex-start; - 'Coloca los elementos al lado izquierdo'
+justify-content: flex-end; - 'Coloca los elementos al lado derecho'
+justify-content: space-between; - 'Agrega un buen espacio entre las demas cajas, es decir que ocupan todo el espacio que tenemos del div y lo proporciona de tal manera para que quede bien con un gran espacio entre ellas mismas, quitando los ajustes del magin'
+justify-content: space-around; - 'Agrega un mismo espacio alrededor de los elementos, quitando los ajustes de magin'
+
+}
+------------------------------------------
+-Align-item: Se usa cuando tenemos un espacio muy grande en el div, como un padding y queremos distribuir bien los elementos o cajas en el centro, arriba,abajo, entre otros.
+
+Ejemplo:
+.flex-container{
+
+align-item: flex-start; - Se van a quedar los elementos en la parte de arriba del div o contenedor
+align-item: center; - Se van a quedar los elementos en el centro del div
+align-item: flex-end; - Se van a quedar los elementos en la parte de abajo del div o contenedor
+align-item: stretch; - Expande esos elementos o cajas en todo el div
+}
+----------------------------------------------------------------------------------
+- Align-content: Ajustar los espacios que hay entre cada elemento cuando hay muchas cajas o elementos, entre las lineas, es decir, que nos organiza los elementos
+
+Ejemplo: 
+align-content: center; - Se organiza los elementos en el centro y organizaria un espacio en linea y linea
+align-content: space-between; - Se organizaria y dejaria un espacio grande entre linea y linea, quitando el margin
+align-content: space-around; - Se organizaria y dejaria un espacio que quede proporcionado entre linea y linea 
+align-content: flex-start; - Se organizaria arriba
+align-content: flex-end; - Se organizaria abajo
+------------------------------------------------------------------------------------
+- Order: Tener la posibilidad de ordenar tus elementos en el orden que tu quieras, si ponerlo en el primer lugar, segundo lugar o tercer lugar todo depende si los elementos estan dentro de flex-container en un div
+
+Ejemplo:
+.caja1{
+
+ order: 3; - Aunque sea la caja uno el elemento aparecera en el tercer lugar
+
+ }
+
+ .caja2{
+ order: 1; - Aunque sea la caja dos el elemento aparecera en el primer lugar
+}
+
+.caja3{
+order: 2; - Aunque sea la caja tres el elemento aparecera en el segundo lugar
+}
+-----------------------------------------------------------------------------
+- flex-grow/flex-basics Sirve para darle prioridad al ancho de un elemento, es decir le puedo dar un poco mas de tamaño a un elemento que a otro, quitando el comando wight osea quitando el ancho:__px
+
+Ejemplo:
+.caja2{
+ flex-grow: 5; - Este va ser el ancho mas grande
+ flex-basics: 50%; - Con porcentaje, puedes usar uno de los dos, o los dos porque se complementan
+}
+
+.caja3{
+flex-grow: 1; - Cuando el valor es 1 queda en el mismo tamaño
+}
+
 */
+
+/*EJEMPLO PRACTICO:*/
+.caja{
+   border: 1px solid black;
+   padding: 30px;
+   margin: 5px;
+   background-color: white;
+   width: 45px;
+   
+   text-align: center;
+}
+
+/*Flex-container:*/
+.flex-container{
+   background: rgb(199, 199, 182);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding: 30px;
+   align-items: center;
+}
+
+
+
  
