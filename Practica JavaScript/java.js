@@ -42,15 +42,84 @@ console.log(20*3);
 /** --Division-- */
 console.log(2/2 + 2);
 
+/**----------------------------------------------------------------------------------------- */
+
 /**Operaciones con variables */ console.log("--OPERACIONES CON VARIABLES--");
 
 let a=10;
 let b=5;
-let c= b + 5;
+let c= b + 6;
 
 console.log("Suma: "+ (a+b));
 console.log("Resta: "+ (a-b));
 console.log("Multiplicacion: "+ (a*b));
 console.log("Division: "+ (a/b));
 console.log(c);
+/**-------------------------------------------------------------------------------------------- */
 
+/* Cadenas de JavaScripts - Strings */ console.log("-- CADENAS DE JAVASCRIPTS - STRINGS --");
+const string = "Revolucion";
+console.log(string);
+
+const badString = string;
+console.log(badString);
+
+/**--------------------------------------------------------------------------------------------- */
+
+/*-- INCORPORACION DE JAVASCRIPTS `${ }` */  console.log("-- Incorporacion de JavaScript `${ }` --");
+
+const name1 = "Balvino";
+const saludo = `Hola, ${name1}`;
+console.log(saludo);
+
+/**----------------------------------------------------------------------------------------------- */
+
+/*Tambien se usa PARA UNIR DOS VARIABLES */ console.log("-- Tambien se usa PARA UNIR DOS VARIABLES--");
+
+const one = "hola";
+const two = "que tal";
+
+const three = `${one}, ${two}`;
+console.log(three);
+/**------------------------------------------------------------------------------------------------- */
+
+/*--LENGTH--*/ console.log("-- LENGHT --");
+
+/**Cuenta el total las letras que colocamos en una variable  */
+let text ="ABCEDFGH2";
+let length = text.length;
+console.log(length); //Aparecera 9, porque cuenta el total de letras que hay en el texto
+/**------------------------------------------------------------------------------------------------- */
+
+/** --CONDICIONALES-- */ console.log("-- CONDICIONALES --");
+let hora=19;
+
+if(hora < 18 && hora >= 12){
+    salud="Buenas tardes";
+}
+else if(hora <12){
+    salud=`Buenos dias, ${name1}`;
+
+}
+else if(hora==18){
+    salud=`Son las 6pm, ${name1}`;
+}
+else{
+    salud=`Buenas noches, ${name1}`;
+}
+console.log(salud);
+
+/** --FUNCIONES-- */ console.log("-- FUNCIONES --");
+//Imagina tomar uno de tus scripts y empaquetarlo en un pequeño paquete que puedas usar una y otra vez sin tener que reescribir ni modificar el código
+
+function animalfavorito(animal){
+    return animal + " es mi animal favorito"
+}
+
+console.log(animalfavorito("la cabra"));
+
+function sum(para1,para2){
+    return para1 + para2;
+}
+
+sum(1,2)
