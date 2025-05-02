@@ -215,5 +215,5 @@ while (contador != numero_secreto) {
 
 }
 intentos++;
-console.log("Bien hecho, el numero que esta en mi cabezaa fue el " + numero_secreto+ " y lo hiciste con "+intentos+" intentos");
+console.log("Felicidades, el numero que esta en mi cabezaa fue el " + numero_secreto+ " y lo hiciste con "+intentos+" intentos");
 
