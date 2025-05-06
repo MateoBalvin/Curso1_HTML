@@ -680,4 +680,103 @@ almacenar_parrafos[1].remove();
 //Metodo #3: -- ReplaceChild -- Remplazar un parrafo ya creado
 //almacenardiv_padre2.replaceChild(parrafo_extra1,almacenar_parrafo[2]);
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+/*--EVENTOS -  EVENTLISTENERS()--*/ console.log(" --EVENTOS -  EVENTLISTENERS()-- ");
+
+//addEventListener("click",__) - Que con click se realizará la acción
+//addEventListener("contextmenu",__) - QUe con el clic derecho se realizará la acción
+//addEventListener("mouseover",__) - Solamente con pasar el mouse al elemento se realizará la accion
+//addEventListener("keypress",__) - Con las teclas del teclado
+
+function ejemplo_saludo(){
+alert("hola desde funcion");
+}
+
+//Añadir evento:
+const saludo_btn = document.querySelector("#saludoBtn"); 
+
+saludo_btn.addEventListener('click', ejemplo_saludo); //Creamos el evento que diga cuando le demos... la primera casilla es la accion de como queremos que se active el evento y el segundo puedes poner la funcion que creas
+
+//Remove Evento:
+const remover_btn = document.querySelector("#removerBtn") 
+
+remover_btn.removeEventListener('click', ejemplo_saludo); //Elimina el evento que estamos manejando
+
+/*--Ejemplo de EventListener() */
+function mostrar_saludo(){
+  const evento_nombre = document.querySelector("#evento-nombre").value;
+  
+  const evento_resultado =document.querySelector("#evento-resultado");
+  evento_resultado.textContent = "hola, "+ evento_nombre;
+}
+
+const evento_enviar = document.querySelector("#evento-enviar");
+evento_enviar.addEventListener("click",mostrar_saludo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --EJEMPLO #2-- */
+
+const enviar_edad = document.querySelector("#enviar-edad");
+enviar_edad.addEventListener("click",mostrar_edad);
+
+function mostrar_edad(){
+  const evento_edad = document.querySelector("#evento-edad").value;
+  const evento_nombre2 = document.querySelector("#evento-nombre").value;
+  
+
+  if(evento_edad<18){
+
+    const parrafo_edad = document.querySelector("#parrafo-edad");
+    parrafo_edad.textContent = "Hola, "+evento_nombre2+" Eres menor de edad, por tener: "+evento_edad+" años";
+    parrafo_edad.style.color ="red";
+    
+  }
+  if(evento_edad>=18){
+
+    const parrafo_edad = document.querySelector("#parrafo-edad");
+    parrafo_edad.textContent = "Hola, "+evento_nombre2+" Eres mayor de edad, por tener: "+evento_edad+" años";
+    parrafo_edad.style.color ="orange";
+    
+  }
+
+
+  
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

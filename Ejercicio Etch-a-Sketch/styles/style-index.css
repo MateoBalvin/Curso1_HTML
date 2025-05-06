@@ -1,0 +1,44 @@
+
+.cuadricula{
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap:wrap;
+
+    background-color: rgb(228, 169, 92);
+    width: 642px;
+    height: 640px;
+    border: 1px solid rgb(0, 0, 0);
+    
+    
+    
+    
+}
+
+.cuadrado{
+    
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: bold;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+      
+}
+
+.boton1-evento{
+    margin-right: auto;
+    margin-left: 785px;
+    margin-top: 50px;
+    margin-bottom:20px ;
+    
+    
+}
+
+/* 40px */
