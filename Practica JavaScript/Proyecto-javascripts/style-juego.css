@@ -1,0 +1,51 @@
+.juego{
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    padding: 30px;
+    font-size: 30px;
+
+}
+
+/**/
+.piedra{
+    margin-right: 20px;
+
+
+}
+.papel{
+    margin-right: 20px;
+}
+.tijera{
+    margin-right: 20px;
+}
+
+/*Botones:*/
+.piedra-boton{
+
+}
+
+/* Container: */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    width: 400px;
+    height: 300px;
+}
+
+.playRound{
+    background-color: aquamarine;
+    padding: 50px;
+    width: 500px;
+    margin: 0 auto;
+    
+    
+}
+
+.playRound-2{
+    background-color: azure;
+    width: 50px;
+    margin: 0 auto;
+}
