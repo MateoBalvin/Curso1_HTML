@@ -1,0 +1,29 @@
+.cuadricula{
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: rgb(255, 179, 173);
+    width: 640px;
+    height: 640px;
+    border: 1px solid black;
+    
+    
+    
+    
+}
+
+.cuadrado{
+    background-color: antiquewhite;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 11px;
+    
+    align-content: center;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+/* 40px */
